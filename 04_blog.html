@@ -26,6 +26,16 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+.textarea {
+         width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 input[type=submit] {
   width: 100%;
   background-color: #ef0031;
@@ -101,11 +111,30 @@ input[type=submit]:hover {
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
-  
-<label for="gender">Your email</label>
-        
-       <br>
-        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+        <label for="gender">Your email</label><br>
+        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email"><br>
+        <label for="gender">Message</label><br>
+        <textarea class="textarea" name="message" rows="10" cols="30" placeholder="Your Message Here.">
+
+</textarea>
+
+<div class="row">
+        <br>
+<div class="col-md-6">
+<label for="gender">Select Gender</label><br>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br>
+</div>
+<div class="col-md-6">
+<label for="gender">Choose Side-Options</label><br>
+<input type="checkbox" name="fruit" value="apple"> Desert
+<input type="checkbox" name="fruit" value="orange"> salad 
+<input type="checkbox" name="fruit" value="banana"> fruits 
+</div>
+
+</div><br>
+<label for="gender">Password</label><br>
+<input type="password" name="pwd">
 
     <input type="submit" value="Submit">
   </form>
