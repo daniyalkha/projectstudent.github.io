@@ -107,9 +107,9 @@ input[type=submit]:hover {
 
     <label for="country">Country</label>
     <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+      <option value="australia">Continental</option>
+      <option value="canada">Chineese</option>
+      <option value="usa">Italian</option>
     </select>
         <label for="gender">Your email</label><br>
         <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email"><br>
@@ -117,16 +117,16 @@ input[type=submit]:hover {
         <textarea class="textarea" name="message" rows="10" cols="30" placeholder="Your Message Here.">
 
 </textarea>
-
+<br>
 <div class="row">
-        <br>
+
 <div class="col-md-6">
-<label for="gender">Select Gender</label><br>
+<label for="gender">Select Gender</label><br><br>
 <input type="radio" name="gender" value="male"> Male
 <input type="radio" name="gender" value="female"> Female<br>
 </div>
 <div class="col-md-6">
-<label for="gender">Choose Side-Options</label><br>
+<label for="gender">Choose Side-Options</label><br><br>
 <input type="checkbox" name="fruit" value="apple"> Desert
 <input type="checkbox" name="fruit" value="orange"> salad 
 <input type="checkbox" name="fruit" value="banana"> fruits 
@@ -134,7 +134,13 @@ input[type=submit]:hover {
 
 </div><br>
 <label for="gender">Password</label><br>
-<input type="password" name="pwd">
+<input type="password" name="pwd" placeholder="Password Here..." style=" width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;">
 
     <input type="submit" value="Submit">
   </form>
